@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharkNinja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topbar-component1">
+        <div class="topbar-left">
+            <span>SharkNinja's Season of Innovation</span>
+            <a href="#">Explore More</a>
+        </div>
+    
+        <div class="topbar-right">
+            <a href="#">Register a product</a>
+            <a href="#">Order Status</a>
+        </div>
+    </div>
+
+    <div class="topbar-component2">
+        <div class="logo">
+            <img class="logo-white" src="images/White-Logo.png" alt="SharkNinja Logo">
+            <img class="logo-black" src="images/logo.svg" alt="SharkNinja Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="hamburger-menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="navigation-menu">
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="#">Discover</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>NEW ARRIVALS</h4>
+                            <h4>BEST SELLERS</h4>
+                            <h4>TRENDING NOW</h4>
+                            <ul>
+                                <li><a href="#">Holiday Gift Guide</a></li>
+                                <li><a href="#">Limited Editions</a></li>
+                                <li><a href="#">Fall Must Haves</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Collaborations</h4>
+                            <ul>
+                                <li><a href="#">Courteney Cox: Clean like a Clean Freak</a></li>
+                                <li><a href="#">David Beckham and Kevin Hart</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>RECIPES</h4>
+                            <ul>
+                                <li><a href="#">Holiday Recipes</a></li>
+                                <li><a href="#">Ninja Slushi Recipes</a></li>
+                                <li><a href="#">Ninja Swirl by Creami Recipes</a></li>
+                                <li><a href="#">Air Fryer Recipes</a></li>
+                                <li><a href="#">Coffee & Espresso Recipes</a></li>
+                                <li><a href="#">Browse All Recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>EXPLORE SHARKNINJA</h4>
+                            <ul>
+                                <li><a href="#">Shark Beauty</a></li>
+                                <li><a href="#">Ninja Kitchen</a></li>
+                                <li><a href="#">Shark Home</a></li>
+                                <li><a href="#">Ninja Outdoor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Shop By Brand</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>SHARK</h4>
+                            <ul>
+                                <li><a href="#">Vacuums</a></li>
+                                <li><a href="#">Hair Care</a></li>
+                                <li><a href="#">Steam & Mop</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>NINJA</h4>
+                            <ul>
+                                <li><a href="#">Air Fryers</a></li>
+                                <li><a href="#">Blenders</a></li>
+                                <li><a href="#">Coffee Makers</a></li>
+                                <li><a href="#">Grills</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Beauty</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>HAIR TOOLS</h4>
+                            <ul>
+                                <li><a href="#">Hair Dryers</a></li>
+                                <li><a href="#">Stylers</a></li>
+                                <li><a href="#">Straighteners</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Home & Cleaning</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>VACUUMS</h4>
+                            <ul>
+                                <li><a href="#">Cordless</a></li>
+                                <li><a href="#">Robot</a></li>
+                                <li><a href="#">Upright</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>CLEANERS</h4>
+                            <ul>
+                                <li><a href="#">Steam Mops</a></li>
+                                <li><a href="#">Hard Floor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Kitchen</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>Small Kitchen Appliances</h4>
+                            <ul>
+                                <li><a href="#">Air Fryers</a></li>
+                                <li><a href="#">Countertop Ovens</a></li>
+                                <li><a href="#">Food Processors</a></li>
+                                <li><a href="#">Immersion Blenders</a></li>
+                                <li><a href="#">Waffle Makers</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>BEVERAGES</h4>
+                            <ul>
+                                <li><a href="#">Coffee & Espresso</a></li>
+                                <li><a href="#">Blenders</a></li>
+                                <li><a href="#">Carbonated Water Makers</a></li>
+                                <li><a href="#">Beverage Machine Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Outdoor</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>OUTDOOR COOKING</h4>
+                            <ul>
+                                <li><a href="#">Outdoor Grills</a></li>
+                                <li><a href="#">Outdoor Ovens</a></li>
+                                <li><a href="#">Supplies & Accessories</a></li>
+                                <li><a href="#">Shop All Outdoor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Parts & Support</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>Home & Cleaning Parts</h4>
+                            <ul>
+                                <li><a href="#">Air Purifiers</a></li>
+                                <li><a href="#">Cordless Vacuums</a></li>
+                                <li><a href="#">Carpet & Spot Cleaners</a></li>
+                                <li><a href="#">Corded Canister Vacuums</a></li>
+                                <li><a href="#">Corded Handheld Vacuums</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Beauty Parts</h4>
+                            <ul>
+                                <li><a href="#">Blow Dry Brushes</a></li>
+                                <li><a href="#">Hair Dryers</a></li>
+                                <li><a href="#">Hair Stylers</a></li>
+                                <li><a href="#">LED Face Masks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#">Sales & Offers</a>
+                    <div class="mega-menu">
+                        <div class="mega-column">
+                            <h4>Shop All Sale</h4>
+                            <h4>Featured Sale</h4>
+                            <ul>
+                                <li><a href="#">Holiday Gift Guide</a></li>
+                                <li><a href="#">Bundle & Save</a></li>
+                                <li><a href="#">Give $20, Get $20</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Home & Cleaning Sale</h4>
+                            <ul>
+                                <li><a href="#">Vacuum Cleaners</a></li>
+                                <li><a href="#">Floor & Carpet Cleaners</a></li>
+                                <li><a href="#">Air Cleaning, Cooling & Heating</a></li>
+                                <li><a href="#">LED Face Masks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-icons">
+                <a href="#">🔍</a>
+                <a href="#">♡</a>
+                <a href="#">👤</a>
+                <a href="#">🛒</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-tagline">DEALS SO GOOD WE COULDN'T WAIT</div>
+            <h1 class="hero-title">Black Friday starts now – up to 40% off*</h1>
+            <a href="#" class="hero-button">
+                Shop sale
+                <span>→</span>
+            </a>
+        </div>
+        <div class="hero-disclaimer"></div>
+    </section>
+
+    <section class="innovations-section">
+        <div class="section-header">
+            <div class="section-tag">DISCOVER THE NEW SHARKNINJA.COM</div>
+            <h2 class="section-title">Shop our latest innovations</h2>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/q_90/v1/storefront/homepage-US/Teaser-Cards/HomePage_TeaserCard_Desktop_Tom?_i=AH"
+                    alt="Product" class="product-image">
+                <span class="product-badge">New</span>
+                <div class="product-info">
+                    <h3 class="product-title">Want to roast like Tom Brady?</h3>
+                    <div class="product-details">
+                        <div class="product-name">Ninja Crisp® Pro 6–in–1 Glass Countertop Air Fryer, Cyberspace</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.6 (49)
+                                (56)</span></div>
+                        <div class="product-price"><span class="sale-price">$279.99</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/v1/storefront/homepage-US/Teaser-Cards/HX101_HomePage_TeaserCard_Desktop_zivy92?_i=AH"
+                    alt="Product" class="product-image">
+                <span class="product-badge">New</span>
+                <div class="product-info">
+                    <h3 class="product-title">Stop tough stains & spills in their tracks</h3>
+                    <div class="product-details">
+                        <div class="product-name">Shark® StainForce™ Handheld Spot & Stain Cleaner</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.4
+                                (56)</span></div>
+                        <div class="product-price"><span class="sale-price">$199.99</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/q_90/v1/storefront/homepage-US/Teaser-Cards/HD442JW_HomePage_TeaserCard_Desktop?_i=AH"
+                    alt="Product" class="product-image">
+                <span class="product-badge">New</span>
+                <div class="product-info">
+                    <h3 class="product-title">Sparkle & shine with FlexStyle® in Frosted Diamond</h3>
+                    <div class="product-details">
+                        <div class="product-name">Shark® FlexStyle® Air Styling & Drying System</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.3
+                                (1128)</span></div>
+                        <div class="product-price"><span class="original-price">$399.99</span><span
+                                class="sale-price">$299.99</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/q_90/v1/storefront/homepage-US/Teaser-Cards/FS605_HomePage_TeaserCard_Desktop?_i=AH"
+                    alt="Product" class="product-image">
+                <span class="product-badge">New</span>
+                <div class="product-info">
+                    <h3 class="product-title">More delicious. More fun.</h3>
+                    <div class="product-details">
+                        <div class="product-name">Ninja® CREAMi® Deluxe</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.7
+                                (892)</span></div>
+                        <div class="product-price"><span class="sale-price">$249.99</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/v1/storefront/homepage-US/Teaser-Cards/TH202WH_HomePage_TeaserCard_Desktop_lancva?_i=AH"
+                    alt="TurboBlade Fan" class="product-image">
+                <span class="product-badge">New</span>
+                <div class="product-info">
+                    <h3 class="product-title">Year-round comfort starts here</h3>
+                    <div class="product-details">
+                        <div class="product-name">Shark® TurboBlade™ Bladeless Fan and Heater (Charcoal)</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.6
+                                (59)</span></div>
+                        <div class="product-price"><span class="original-price">$399.99</span><span
+                                class="sale-price">$349.99</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/q_90/v1/storefront/homepage-US/Teaser-Cards/HomePage_TeaserCard_FH320_Desktop?_i=AH"
+                    alt="FacialPro Glow" class="product-image">
+                <span class="product-badge">New</span>
+                <div class="product-info">
+                    <h3 class="product-title">Power on your skincare. Level-up your glow.</h3>
+                    <div class="product-details">
+                        <div class="product-name">Shark™ FacialPro™ Glow At Home Hydro-Powered Facial System</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.8
+                                (37)</span></div>
+                        <div class="product-price"><span class="sale-price">$399.99</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="trending-section">
+        <h2 class="trending-title">Trending on social</h2>
+        <p class="trending-subtitle">Discover how others use their Shark and Ninja products every day.</p>
+
+        <div class="slider-viewport">
+            <div class="slider-track" id="sliderTrack">
+                <div class="slide">
+                    <span class="badge"></span>
+                    <video class="thumb" muted autoplay loop playsinline preload="metadata"
+                        src="https://edge.curalate.com/v1/vid/h87Q7Hu-s5oMbxJ2Wrk5X50ZqVHacl9sId79NIBq458=/h"></video>
+                    <div class="play">▶</div>
+                    <div class="overlay">
+                        <div class="caption"></div>
+                        <div class="meta"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <span class="badge"></span>
+                    <video class="thumb" muted autoplay loop playsinline preload="metadata"
+                        src="https://edge.curalate.com/v1/vid/1ebXrGOgv9Af3St466BBZVHkx8dVpmIVnCQdxDPKbiM=/h"></video>
+                    <div class="play">▶</div>
+                    <div class="overlay">
+                        <div class="caption">Having Shark StainForce on-hand is always a good call</div>
+                        <div class="meta"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <span class="badge"></span>
+                    <video class="thumb" muted autoplay loop playsinline preload="metadata"
+                        src="https://edge.curalate.com/v1/vid/f01e7KIycNo1h-heanTNNbHsIcjAb87LpIS4kBF1zO0=/h"></video>
+                    <div class="play">▶</div>
+                    <div class="overlay">
+                        <div class="caption">Espresso martini... but make it frosty</div>
+                        <div class="meta"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <span class="badge"></span>
+                    <video class="thumb" muted autoplay loop playsinline preload="metadata"
+                        src="https://edge.curalate.com/v1/vid/9vxqNhxIyIRWEK-WTh_CxYMuu-oqyvHOvQ9cYHNlW0g=/h"></video>
+                    <div class="play">▶</div>
+                    <div class="overlay">
+                        <div class="caption">It’s cozy TIIIIIMME</div>
+                        <div class="meta"><span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <span class="badge"></span>
+                    <video class="thumb" muted autoplay loop playsinline preload="metadata"
+                        src="https://edge.curalate.com/v1/vid/y5kHIsUHeQ1EXEdtgCY6KitApYFzigknqyfYl9YP7Yw=/h"></video>
+                    <div class="play">▶</div>
+                    <div class="overlay">
+                        <div class="caption">NEW Ninja CRISPi Pro Glass Air Fryer</div>
+                        <div class="meta"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <span class="badge"></span>
+                    <video class="thumb" muted autoplay loop playsinline preload="metadata"
+                        src="https://edge.curalate.com/v1/vid/yUhcdsUmd9eJy45WTkPbK8eKdxXENWMi5S-vBFFu95o=/h"></video>
+                    <div class="play">▶</div>
+                    <div class="overlay">
+                        <div class="caption">For the besties that are the same person</div>
+                        <div class="meta"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bundles-section">
+        <div class="bundles-header">
+            <div class="bundles-tag">SAVE WITH CURATED BUNDLES</div>
+            <h2 class="bundles-title">Perfectly paired products only available here</h2>
+        </div>
+        <div class="bundles-grid">
+            <div class="bundle-card">
+                <h3 class="bundle-title">Shark® PowerDetect™ Vacuum + TruePet Upgrade</h3>
+                <a href="#" class="bundle-link">
+                    Shop Now
+                    <span>→</span>
+                </a>
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_550/q_90/v1/storefront/homepage-US/bundle-carousel/HomePage_AZ407UPG1_BundleCarousel_Desktop_02?_i=AH"
+                    alt="Bundle Product" class="bundle-image">
+            </div>
+
+            <div class="bundle-card">
+                <h3 class="bundle-title">Ninja Crispi™ 4-in-1 Lavender Glass Air Fryer</h3>
+                <a href="#" class="bundle-link">
+                    Shop Now
+                    <span>→</span>
+                </a>
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_550/q_90/v1/storefront/homepage-US/bundle-carousel/HomePage_FN091B1_BundleCarousel_Desktop_02?_i=AH"
+                    alt="Bundle Product" class="bundle-image">
+            </div>
+
+            <div class="bundle-card">
+                <h3 class="bundle-title">Shark™ CryoGlow™ LED Mask & Charging Stand</h3>
+                <a href="#" class="bundle-link">
+                    Shop Now
+                    <span>→</span>
+                </a>
+                <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_550/q_90/v1/storefront/homepage-US/bundle-carousel/HomePage_FW312S_BundleCarousel_Desktop_01?_i=AH"
+                    alt="Bundle Product" class="bundle-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="build-section">
+        <div class="build-header">
+            <div class="build-tag">BUILD YOUR OWN</div>
+            <h2 class="build-title">Personalize your way, only online</h2>
+        </div>
+
+        <div class="build-slider-viewport">
+            <div class="build-slider-track">
+                <div class="build-card" style="background: linear-gradient(135deg, #d4b5a0 0%, #c9a88f 100%);">
+                    <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/v1/storefront/homepage-US/bundle-carousel/HD6000_HomePage_BYO-Carousel-Desktop_04?_i=AH"
+                        alt="Build Product" class="build-card-image">
+                    <div class="build-card-content">
+                        <h3 class="build-card-title">Build Your Own Shark <br> Glam™</h3>
+                        <div class="build-card-feature">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="build-card" style="background: linear-gradient(135deg, #e8d5d0 0%, #d9c4bf 100%);">
+                    <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/v1/storefront/homepage-US/bundle-carousel/OG0952_HomePage_BYO-Carousel-Desktop_05?_i=AH"
+                        alt="Build Product" class="build-card-image">
+                    <div class="build-card-content">
+                        <h3 class="build-card-title">Build Your Own Ninja® <br> Woodfire Outdoor Grill & <br> Smoker
+                        </h3>
+                        <div class="build-card-feature">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="build-card" style="background: linear-gradient(135deg, #d5c5e0 0%, #c4b5cf 100%);">
+                    <img src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/c_scale,h_525/v1/storefront/homepage-US/bundle-carousel/HomePage_HD400_BYO-Carousel-Desktop_01?_i=AH"
+                        alt="Build Product" class="build-card-image">
+                    <div class="build-card-content">
+                        <h3 class="build-card-title">Build Your Own Shark® FlexStyle®</h3>
+                        <div class="build-card-feature">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fall-section">
+        <div class="fall-header">
+            <div class="fall-tag">DISCOVER</div>
+            <h2 class="fall-title">Fall Cooking Inspiration</h2>
+        </div>
+
+        <div class="fall-slider-viewport">
+            <div class="fall-slider-track">
+
+                <div class="fall-card" style="background: linear-gradient(135deg, #d4b5a0 0%, #c9a88f 100%);">
+                    <img class="fall-card-image"
+                        src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/co_rgb:000000,e_colorize:15/v1/storefront/homepage-US/tips-and-tricks/Homepage_Tips-Trick-550x550-desktop_02?_i=AH"
+                        alt="Mexican Coffee">
+
+                    <div class="fall-overlay" aria-hidden="true"></div>
+
+                    <span class="fall-badge">Ninja Luxe™ Café</span>
+
+                    <div class="fall-card-content">
+                        <h3 class="fall-card-title">Mexican-Spiced Coffee with<br>Chocolate Cold Foam</h3>
+                        <a href="#" class="fall-card-link">Get the Recipe <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <div class="fall-card" style="background: linear-gradient(135deg, #e8d5d0 0%, #d9c4bf 100%);">
+                    <img class="fall-card-image"
+                        src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/co_rgb:000000,e_colorize:15/v1/storefront/homepage-US/tips-and-tricks/Homepage_Tips-Trick-550x550-desktop_03?_i=AH"
+                        alt="Pumpkin Slushi">
+                    <div class="fall-overlay" aria-hidden="true"></div>
+                    <span class="fall-badge">Ninja SLUSHI™</span>
+                    <div class="fall-card-content">
+                        <h3 class="fall-card-title">Pumpkin Spice<br>Frappé Slushi</h3>
+                        <a href="#" class="fall-card-link">Get the Recipe <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <div class="fall-card" style="background: linear-gradient(135deg, #d5c5e0 0%, #c4b5cf 100%);">
+                    <img class="fall-card-image"
+                        src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/co_rgb:000000,e_colorize:15/v1/storefront/homepage-US/tips-and-tricks/Homepage_Tips-Trick-550x550-desktop_04?_i=AH"
+                        alt="Maple Gelato">
+                    <div class="fall-overlay" aria-hidden="true"></div>
+                    <span class="fall-badge">Ninja Gelato™</span>
+                    <div class="fall-card-content">
+                        <h3 class="fall-card-title">Maple Gelato</h3>
+                        <a href="#" class="fall-card-link">Get the Recipe <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pcu-wrap">
+
+        <input id="pcu-tab-home" type="radio" name="pcu-tabs" checked>
+        <input id="pcu-tab-kitchen" type="radio" name="pcu-tabs">
+        <input id="pcu-tab-beauty" type="radio" name="pcu-tabs">
+        <input id="pcu-tab-outdoor" type="radio" name="pcu-tabs">
+
+        <div class="pcu-kicker">POPULAR CATEGORIES</div>
+        <h1 class="pcu-h1">Upgrade your every day</h1>
+
+        <div class="pcu-tabs-row" aria-hidden="false">
+            <label class="pcu-tab-label" for="pcu-tab-home">Home</label>
+            <label class="pcu-tab-label" for="pcu-tab-kitchen">Kitchen</label>
+            <label class="pcu-tab-label" for="pcu-tab-beauty">Beauty</label>
+            <label class="pcu-tab-label" for="pcu-tab-outdoor">Outdoor</label>
+        </div>
+        <div class="pcu-content">
+            <section id="pcu-home" class="pcu-section pcu-home">
+                <div class="pcu-product-list pcu-home-list">
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/IP3251C_Hero_540x540-2_f6omh4?_i=AH"
+                                alt="Cordless"></figure>
+                        <div class="pcu-card-label">Cordless Vacuums →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/HP072C_Hero_540x540_fqiwpg?_i=AH"
+                                alt="Air"></figure>
+                        <div class="pcu-card-label">Air Purifiers →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/t_hp-category-carousel/v1/storefront/homepage-US/Category%20Carousel/RV2820ZECA_02_1?_i=AH"
+                                alt="Robot"></figure>
+                        <div class="pcu-card-label">Robot Vacuums →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/t_hp-category-carousel/v1/storefront/homepage-US/Category%20Carousel/TF202S_02_1?_i=AH"
+                                alt="Fans"></figure>
+                        <div class="pcu-card-label">Fans →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/EX301C_Hero_540x540_rruqll?_i=AH"
+                                alt="Carpet"></figure>
+                        <div class="pcu-card-label">Carpet Cleaners →</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="pcu-kitchen" class="pcu-section pcu-kitchen">
+                <div class="pcu-product-list pcu-kitchen-list">
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/Storefront/Products/FS301/FS301_01?_i=AH"
+                                alt="Slushi"></figure>
+                        <div class="pcu-card-label">Slushi →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/NC701C_Hero_540x540_oyscwb?_i=AH"
+                                alt="Ice Cream"></figure>
+                        <div class="pcu-card-label">Ice Cream Makers →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/ES601C_Hero_540x540_raxb2g?_i=AH"
+                                alt="Coffee"></figure>
+                        <div class="pcu-card-label">Coffee & Espresso Machines →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/AF181C_Hero_540x540_g3s7jo?_i=AH"
+                                alt="Small Kitchen"></figure>
+                        <div class="pcu-card-label">Small Kitchen Appliances →</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="pcu-beauty" class="pcu-section pcu-beauty">
+                <div class="pcu-product-list pcu-beauty-list">
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/FW312C_Hero_540x540_msj1ka?_i=AH"
+                                alt="Skin"></figure>
+                        <div class="pcu-card-label">Skin Care →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/HD6041SC_Hero_540x540_d3a2sf?_i=AH"
+                                alt="Hair"></figure>
+                        <div class="pcu-card-label">Hair Stylers →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/t_hp-category-carousel/v1/storefront/homepage-US/Category%20Carousel/HD731_01_1?_i=AH"
+                                alt="Dryers"></figure>
+                        <div class="pcu-card-label">Hair Dryers →</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="pcu-outdoor" class="pcu-section pcu-outdoor">
+                <div class="pcu-product-list pcu-outdoor-list">
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/SharkNinja-NA/OF101CY_01?_i=AH"
+                                alt="Fire Pit"></figure>
+                        <div class="pcu-card-label">Fire Pits →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/FB245CBL_Hero_540x540_zqxip1?_i=AH"
+                                alt="Coolers"></figure>
+                        <div class="pcu-card-label">Coolers →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/OG701LWC_Hero_540x540_p8m4rm?_i=AH"
+                                alt="Grills"></figure>
+                        <div class="pcu-card-label">Outdoor Grills →</div>
+                    </div>
+
+                    <div class="pcu-card">
+                        <figure class="pcu-card-figure"><img
+                                src="https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/homepage-US/Category%20Carousel/MO201C_Hero_540x540_ckypwz?_i=AH"
+                                alt="Outdoor Oven"></figure>
+                        <div class="pcu-card-label">Outdoor Ovens →</div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="pcu-why" aria-labelledby="pcu-why-h">
+        <div style="max-width:1180px;margin:0 auto;">
+            <div id="pcu-why-h"
+                style="font-size:13px;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Why buy
+                from SharkNinja?</div>
+            <h2 style="margin:0 0 18px;font-size:32px;">Shop direct and unlock premium benefits</h2>
+
+            <div class="pcu-why-grid">
+                <div class="pcu-why-card">
+                    <div class="pcu-why-icon">🛍️</div>
+                    <div class="pcu-why-title"> <strong>Exclusive products, colors, bundles & deals </strong></div>
+                    <div class="pcu-why-text">Elevate your shopping experience with one-of-a-kind finds and exclusive
+                        deals.
+                    </div>
+                </div>
+
+                <div class="pcu-why-card">
+                    <div class="pcu-why-icon">🧾</div>
+                    <div class="pcu-why-title"><strong>60–day money-back guarantee</strong></div>
+                    <div class="pcu-why-text">United States 60-Day Returns, Refunds and Exchanges Policy.</div>
+                </div>
+
+                <div class="pcu-why-card">
+                    <div class="pcu-why-icon">📦</div>
+                    <div class="pcu-why-title"><strong>Free shipping on orders over $99 </strong></div>
+                    <div class="pcu-why-text">Free shipping on all orders over $99. Exclusions may apply.</div>
+                </div>
+
+                <div class="pcu-why-card">
+                    <div class="pcu-why-icon">🛡️</div>
+                    <div class="pcu-why-title"><strong>Easy product warranty registration</strong></div>
+                    <div class="pcu-why-text">At SharkNinja, we stand behind the quality and performance of every
+                        product we
+                        create.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pcu-footer" role="contentinfo">
+
+        <div class="pcu-footer-inner">
+
+            <div class="pcu-footer-col">
+                <h4 class="pcu-footer-heading">Support</h4>
+                <ul class="pcu-footer-list" style="list-style-type: none;">
+                    <li>Support & FAQs</li>
+                    <li>Return Policy</li>
+                    <li>Warranty Information</li>
+                    <li>Shipping Information</li>
+                    <li>Become an Affiliate</li>
+                    <li>Offer Details</li>
+                    <li>Contact Us</li>
+                    <li>Student Discount</li>
+                    <li>Cleaning & Solution Ingredients</li>
+                </ul>
+            </div>
+
+            <div class="pcu-footer-col">
+                <h4 class="pcu-footer-heading">Our Company</h4>
+                <ul class="pcu-footer-list" style="list-style-type: none;">
+                    <li>About Us</li>
+                    <li>Recipe Ideas</li>
+                    <li>Innovation</li>
+                    <li>Commitments</li>
+                    <li>Patents</li>
+                    <li>Newsroom</li>
+                    <li>Careers</li>
+                    <li>Candidate Privacy Notice</li>
+                </ul>
+            </div>
+
+            <div class="pcu-footer-col">
+                <h4 class="pcu-footer-heading">Privacy & Compliance</h4>
+                <ul class="pcu-footer-list" style="list-style-type: none;">
+                    <li>Privacy Policy</li>
+                    <li>Connected Devices</li>
+                    <li>Third Party Notice</li>
+                    <li>Vulnerability Disclosure Policy</li>
+                    <li>Supplier Code of Ethics</li>
+                    <li>Ethics and Compliance Hotline</li>
+                    <li>CA Transparency in Supply Chains Acts</li>
+                    <li>California AB1200 Information</li>
+                </ul>
+            </div>
+
+            <div class="pcu-footer-col pcu-footer-right">
+                <h4 class="pcu-footer-heading">10% off* your next product purchase when you subscribe.</h4>
+
+                <label class="pcu-label">Enter your email</label>
+
+                <div class="pcu-input-row">
+                    <input type="email" placeholder="you@youremail.com" class="pcu-input">
+                    <button class="pcu-btn">Sign up</button>
+                </div>
+
+                <p class="pcu-small-note">
+                    *Offer valid for new email subscribers only & limited to 1 item.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="pcu-footer-bottom">
+
+            <div class="pcu-footer-copy">
+                ©2025 SharkNinja Operating, LLC. All rights reserved.
+            </div>
+
+            <div class="pcu-footer-links">
+                <a>Privacy Policy</a>
+                <a>Your Privacy Rights</a>
+                <a>Terms of Use</a>
+                <a>Terms of Recipe Use</a> <br>
+                <a>Ad and Cookie Notice</a>
+                <a>Accessibility</a>
+            </div>
+
+            <div class="pcu-location-selector">
+                <button class="pcu-location-btn">🌐 United States ▼</button>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
