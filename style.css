@@ -133,7 +133,6 @@ body {
     width: 100%;
 }
 
-/* Mega menu */
 .mega-menu {
     position: absolute;
     top: 100%;
@@ -155,7 +154,6 @@ body {
     justify-content: flex-start;
 }
 
-/* Mega menu columns */
 .mega-column {
     display: flex;
     flex-direction: column;
@@ -192,7 +190,6 @@ body {
     text-decoration: underline;
 }
 
-/* Icons */
 .nav-icons {
     display: flex;
     gap: 18px;
@@ -1128,7 +1125,6 @@ background: transparent;
 .pcu-beauty .pcu-card { flex: 0 0 calc((100% - (36px * 2)) / 3); min-width: 240px; max-width: 360px; }
 .pcu-outdoor .pcu-card { flex: 0 0 calc((100% - (36px * 3)) / 4); min-width: 220px; max-width: 300px; }
 
-        /* responsive */
 @media (max-width: 1100px) {
 .pcu-card-figure { height: 280px; }
 .pcu-product-list { gap: 24px; padding: 22px; }
@@ -1230,7 +1226,7 @@ background: transparent;
 .pcu-input {
     flex: 1;
     padding: 12px 16px;
-    border-radius: 28px;/* === 📱 Responsive Design === */
+    border-radius: 28px;
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -1284,13 +1280,7 @@ background: transparent;
     font-size: 14px;
     cursor: pointer;
 }
-/* ========================================
-   SHARKNINJA RESPONSIVE MEDIA QUERIES
-   Add these at the bottom of your style.css
-   ======================================== */
 
-/* === 📱 MOBILE HAMBURGER MENU === */
-/* Hamburger button - hidden by default */
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -1314,7 +1304,6 @@ background: transparent;
     background-color: #000;
 }
 
-/* Mobile nav overlay */
 .mobile-nav-overlay {
     display: none;
     position: fixed;
@@ -1330,7 +1319,6 @@ background: transparent;
     display: block;
 }
 
-/* Mobile navigation drawer */
 .nav-links.mobile-active {
     position: fixed;
     top: 0;
@@ -1353,11 +1341,7 @@ background: transparent;
     transform: translateX(0);
 }
 
-/* ========================================
-   TABLET & BELOW (max-width: 1024px)
-   ======================================== */
 @media (max-width: 1024px) {
-    /* Top bar adjustments */
     #topbar-component1 {
         padding: 8px 30px;
         font-size: 13px;
@@ -1372,7 +1356,6 @@ background: transparent;
         gap: 15px;
     }
     
-    /* Navigation */
     .navigation-menu {
         width: 95%;
         padding: 8px 0;
@@ -1388,13 +1371,11 @@ background: transparent;
         font-size: 14px;
     }
     
-    /* Logo */
     .logo-white,
     .logo-black {
         width: 120px;
     }
     
-    /* Mega menu */
     .mega-menu {
         left: -30px;
         padding: 20px 30px;
@@ -1405,7 +1386,6 @@ background: transparent;
         min-width: 180px;
     }
     
-    /* Hero section */
     .hero-section {
         height: 450px;
         padding: 0 40px;
@@ -1419,7 +1399,6 @@ background: transparent;
         font-size: 12px;
     }
     
-    /* Promo banner */
     .promo-banner {
         padding: 15px 30px;
     }
@@ -1428,7 +1407,6 @@ background: transparent;
         font-size: 18px;
     }
     
-    /* Sections padding */
     .innovations-section,
     .bundles-section,
     .build-section,
@@ -1440,7 +1418,6 @@ background: transparent;
         padding: 40px 20px;
     }
     
-    /* Section titles */
     .section-title,
     .bundles-title,
     .build-title,
@@ -1452,7 +1429,6 @@ background: transparent;
         font-size: 30px;
     }
     
-    /* Product cards */
     .product-card {
         flex: 0 0 320px;
         height: 440px;
@@ -1464,7 +1440,6 @@ background: transparent;
         height: 340px;
     }
     
-    /* Bundle cards */
     .bundle-card,
     .build-card,
     .fall-card {
@@ -1483,7 +1458,6 @@ background: transparent;
         height: 580px;
     }
     
-    /* Popular categories */
     .pcu-h1 {
         font-size: 34px;
     }
@@ -1498,7 +1472,6 @@ background: transparent;
         height: 280px;
     }
     
-    /* Footer */
     .pcu-footer-inner {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -1509,11 +1482,7 @@ background: transparent;
     }
 }
 
-/* ========================================
-   MOBILE LANDSCAPE (max-width: 900px)
-   ======================================== */
 @media (max-width: 900px) {
-    /* Show hamburger, hide desktop nav */
     #topbar-component1 {
         display: flex !important;
         justify-content: center !important;
@@ -1523,7 +1492,6 @@ background: transparent;
         font-size: 13px;
     }
 
-    /* Center the announcement text */
     #topbar-component1 .topbar-left {
         width: 100%;
         display: flex;
@@ -1541,7 +1509,6 @@ background: transparent;
         text-decoration: underline;
     }
 
-    /* Hide right side links */
     #topbar-component1 .topbar-right {
         display: none !important;
     }
@@ -1666,7 +1633,6 @@ background: transparent;
         padding: 5px 0;
     }
     
-    /* Nav icons in mobile */
     .nav-icons {
         gap: 15px;
     }
@@ -1675,7 +1641,6 @@ background: transparent;
         font-size: 18px;
     }
     
-    /* Top bar mobile */
     #topbar-component1 {
         padding: 6px 20px;
         font-size: 12px;
@@ -1699,7 +1664,6 @@ background: transparent;
         font-size: 11px;
     }
     
-    /* Hero section mobile */
     .hero-section {
         height: 600px;
         padding: 0 25px;
@@ -1753,7 +1717,6 @@ background: transparent;
         justify-content: center;
     }
     
-    /* Sections mobile */
     .innovations-section,
     .bundles-section,
     .build-section,
@@ -1779,7 +1742,6 @@ background: transparent;
         font-size: 11px;
     }
     
-    /* Product cards mobile */
     .product-card {
         flex: 0 0 280px;
         height: 400px;
@@ -1793,7 +1755,6 @@ background: transparent;
         font-size: 13px;
     }
     
-    /* Trending section mobile */
     .slide {
         flex: 0 0 calc((100% - 48px) / 3);
         min-width: 200px;
@@ -1806,7 +1767,6 @@ background: transparent;
         font-size: 20px;
     }
     
-    /* Bundle cards mobile */
     .bundle-card,
     .build-card,
     .fall-card {
@@ -1839,7 +1799,6 @@ background: transparent;
         font-size: 14px;
     }
     
-    /* Popular categories mobile */
     .pcu-wrap {
         padding: 0 15px;
     }
@@ -1878,7 +1837,6 @@ background: transparent;
         font-size: 14px;
     }
     
-    /* Why section mobile */
     .pcu-why {
         padding: 20px 15px;
     }
@@ -1906,7 +1864,6 @@ background: transparent;
         font-size: 24px;
     }
     
-    /* Footer mobile */
     .pcu-footer {
         padding: 30px 15px;
     }
@@ -1965,17 +1922,12 @@ background: transparent;
     }
 }
 
-/* ========================================
-   SMALL MOBILE (max-width: 600px)
-   ======================================== */
 @media (max-width: 600px) {
-    /* Logo smaller */
     .logo-white,
     .logo-black {
         width: 100px;
     }
     
-    /* Top bar minimal */
     #topbar-component1 {
         padding: 6px 15px;
     }
@@ -1992,7 +1944,6 @@ background: transparent;
         font-size: 10px;
     }
     
-    /* Hero section compact */
     .hero-section {
         height: 650px;
         padding: 0 20px;
@@ -2024,7 +1975,6 @@ background: transparent;
         font-size: 9px;
     }
     
-    /* Promo banner compact */
     .promo-banner {
         padding: 15px;
     }
@@ -2043,7 +1993,6 @@ background: transparent;
         font-size: 13px;
     }
     
-    /* All sections tighter */
     .innovations-section,
     .bundles-section,
     .fall-section,
@@ -2070,7 +2019,6 @@ background: transparent;
         font-size: 13px;
     }
     
-    /* Product cards smaller */
     .product-card {
         flex: 0 0 260px;
         height: 380px;
@@ -2094,7 +2042,6 @@ background: transparent;
         padding: 18px;
     }
     
-    /* Trending slides smaller */
     .slide {
         flex: 0 0 calc((100% - 24px) / 2);
         min-width: 180px;
@@ -2115,7 +2062,6 @@ background: transparent;
         font-size: 12px;
     }
     
-    /* Bundle/Build/Fall cards */
     .bundle-card,
     .build-card,
     .fall-card {
@@ -2162,7 +2108,6 @@ background: transparent;
         right: 20px;
     }
     
-    /* Popular categories compact */
     .pcu-wrap {
         padding: 0 12px;
         margin: 20px auto 40px;
@@ -2202,7 +2147,6 @@ background: transparent;
         font-size: 13px;
     }
     
-    /* Why section compact */
     .pcu-why {
         padding: 20px 12px;
     }
@@ -2231,7 +2175,6 @@ background: transparent;
         font-size: 15px;
     }
     
-    /* Footer compact */
     .pcu-footer {
         padding: 25px 12px;
     }
@@ -2254,9 +2197,6 @@ background: transparent;
     }
 }
 
-/* ========================================
-   EXTRA SMALL MOBILE (max-width: 500px)
-   ======================================== */
 @media (max-width: 500px) {
     #topbar-component1 {
         display: flex !important;
@@ -2267,7 +2207,6 @@ background: transparent;
         font-size: 13px;
     }
 
-    /* Center the announcement text */
     #topbar-component1 .topbar-left {
         width: 100%;
         display: flex;
@@ -2285,7 +2224,6 @@ background: transparent;
         text-decoration: underline;
     }
 
-    /* Hide right side links */
     #topbar-component1 .topbar-right {
         display: none !important;
     }
@@ -2333,7 +2271,6 @@ background: transparent;
         font-size: 1.25rem;
     }
     
-    /* Minimal hero */
     .hero-section {
         height: 600px;
         padding: 0 15px;
@@ -2350,7 +2287,6 @@ background: transparent;
         align-items: center;
     }
     
-    /* Tiny sections */
     .section-title,
     .bundles-title,
     .build-title,
@@ -2362,13 +2298,11 @@ background: transparent;
         font-size: 18px;
     }
     
-    /* Single slide view */
     .slide {
         flex: 0 0 calc(100% - 20px);
         min-width: 160px;
     }
     
-    /* Full width cards */
     .product-card {
         flex: 0 0 240px;
     }
@@ -2383,11 +2317,6 @@ background: transparent;
     }
 }
 
-/* ========================================
-   ACCESSIBILITY & UTILITIES
-   ======================================== */
-
-/* Focus styles for keyboard navigation */
 @media (max-width: 900px) {
     .nav-links.mobile-active a:focus,
     .hamburger-menu:focus {
@@ -2396,12 +2325,10 @@ background: transparent;
     }
 }
 
-/* Smooth scrolling for all devices */
 html {
     scroll-behavior: smooth;
 }
 
-/* Touch-friendly tap targets */
 @media (max-width: 900px) {
     a, button, .hamburger-menu {
         min-height: 44px;
@@ -2412,7 +2339,6 @@ html {
     }
 }
 
-/* Prevent horizontal overflow */
 body {
     overflow-x: hidden;
 }
