@@ -985,10 +985,6 @@ body {
 .fall-card { min-width: 420px; height: 620px; }
 .fall-card-title { font-size: 24px; }
 }
-@media (max-width: 900px) {
-.fall-card { min-width: 360px; height: 560px; }
-.fall-card-title { font-size: 20px; }
-}
 @media (max-width: 480px) {
 .fall-card { min-width: 90%; height: 460px; }
 .fall-card-title { font-size: 18px; }
@@ -1517,6 +1513,18 @@ body {
         padding: 0.5rem 1rem;
     }
 
+    a, button, .hamburger-menu {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
     .logo {
         margin: 0;
         order: 1;
@@ -1551,6 +1559,16 @@ body {
 
     .nav-icons a {
         font-size: 1.25rem;
+    }
+
+    .nav-links.mobile-active a:focus,
+    .hamburger-menu:focus {
+        outline: 2px solid #000;
+        outline-offset: 2px;
+        }
+
+    html {
+        scroll-behavior: smooth;
     }
 
     .mega-menu {
@@ -1720,7 +1738,8 @@ body {
     .fall-section {
         padding: 30px 20px;
     }
-    
+    .fall-card { min-width: 360px; height: 560px; }
+    .fall-card-title { font-size: 20px; }
     .section-title,
     .bundles-title,
     .build-title,
@@ -2314,28 +2333,4 @@ body {
     }
 }
 
-@media (max-width: 900px) {
-    .nav-links.mobile-active a:focus,
-    .hamburger-menu:focus {
-        outline: 2px solid #000;
-        outline-offset: 2px;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 900px) {
-    a, button, .hamburger-menu {
-        min-height: 44px;
-        min-width: 44px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-body {
-    overflow-x: hidden;
-}
+   
