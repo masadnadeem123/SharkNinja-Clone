@@ -98,8 +98,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 25px;
-    align-items: center;
+    gap: 18px;
+    align-items:auto;
 }
 
 .nav-item {
@@ -304,13 +304,22 @@ body {
 .promo-banner {
     position: relative;
     width: 100%;
-    background: linear-gradient(90deg, #2a1a4d 0%, #1a4d4d 50%, #2a6d4d 100%);
+     background: linear-gradient(
+        90deg,
+        #4b0082 0%,    
+        #3a2d93 15%,     
+        #274d9c 35%,     
+        #1b6f7a 60%,     
+        #0da84a 100%   
+    );
     padding: 18px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
 }
 
+/* LEFT CONTENT */
 .promo-content {
     display: flex;
     align-items: center;
@@ -327,8 +336,11 @@ body {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+    max-width: 700px;
+    line-height: 1.3;
 }
 
+/* BUTTON */
 .promo-button {
     display: inline-flex;
     align-items: center;
@@ -340,6 +352,7 @@ body {
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
     transition: transform 0.3s ease;
 }
 
@@ -612,7 +625,7 @@ body {
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #666;
+    color: #000;
     margin-bottom: 8px;
 }
 
@@ -647,8 +660,8 @@ body {
 
 .bundle-card {
     flex: 0 0 calc((100% - 48px) / 3);
-    min-width: 500px;
-    height: 900px;
+    min-width: 600px;
+    height: 500px;
     background: #e8e6e1;
     border-radius: 12px;
     overflow: hidden;
@@ -679,7 +692,7 @@ body {
     position: absolute;
     left: 40px;
     z-index: 3;
-    color: #000;
+    color: #fff;
 }
 
 .bundle-title {
@@ -1475,7 +1488,7 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     #topbar-component1 {
         display: flex !important;
         justify-content: center !important;
@@ -1859,17 +1872,7 @@ body {
     
     .pcu-why-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .pcu-why-card {
-        border-right: none;
-        border-bottom: 1px solid rgba(0,0,0,0.06);
-        padding: 18px;
-    }
-    
-    .pcu-why-card:last-child {
-        border-bottom: none;
+        gap: 20px
     }
     
     .pcu-why-title {
