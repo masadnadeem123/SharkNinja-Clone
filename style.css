@@ -248,7 +248,7 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 420px;
     background-image: url(images/cover-sn.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -371,6 +371,7 @@ body {
 .innovations-section {
     /* keep section centered and constrained so two large cards sit neatly */
     max-width: 1180px;
+    /* height: 400px; */
     margin: 0 auto;
     padding: 60px 40px;
     background-color: #fff;
@@ -453,7 +454,7 @@ body {
 /* keep the badge at the top-left as before */
 .product-badge {
     position: absolute;
-    top: 16px;
+    top: 10px;
     left: 16px;
     background-color: #baf3c0;
     color: #005a2b;
@@ -1193,8 +1194,8 @@ body {
 }
 
 .pcu-card-figure img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     display: block;
     transform-origin: center;
@@ -1256,8 +1257,8 @@ body {
     justify-content: center;
     margin-bottom: 14px;
 }
-.pcu-why-title { font-weight: 700; margin-bottom: 10px; font-size: 25px; }
-.pcu-why-text { color: #666; font-size: 15px; line-height: 1.45; }
+.pcu-why-title { font-weight: 700; margin-bottom: 10px; font-size: 20px; }
+.pcu-why-text { color: #000; font-size: 16px; line-height: 1.45; }
 
 @media (max-width: 880px) {
 .pcu-why-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
