@@ -12,24 +12,27 @@ body {
 
 #topbar-component1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 550px; 
     align-items: center;
     padding: 8px 16px;
     background: #f7f5f2;
     font-size: 14px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .topbar-left {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 12px;
     white-space: nowrap;
 }
 
 .topbar-left span {
     color: #333;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
 }
 
 .topbar-left a {
@@ -41,7 +44,7 @@ body {
 .topbar-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
 }
 
 .topbar-right a {
@@ -84,11 +87,14 @@ body {
 }
 
 .navigation-menu {
-    width: 90%;
+    width: 100%;
+    max-width: 1180px; /* keep nav content centered on wide screens */
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    /* center main navigation block so logo and nav align visually */
+    justify-content: center;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 20px;
     border-top: 1px solid #333;
     transition: border-color 300ms ease;
     position: relative;
@@ -96,8 +102,10 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 13px;
+    gap: 24px; /* more breathing room between nav items */
     align-items: center;
+    justify-content: center; /* center the links inside the nav bar */
+    flex: 1 1 auto; /* allow nav-links to take available space and stay centered */
 }
 
 .nav-item {
@@ -154,7 +162,7 @@ body {
 .mega-column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px;
     min-width: 200px;
 }
 
@@ -191,6 +199,8 @@ body {
     display: flex;
     gap: 18px;
     align-items: center;
+    /* anchor icons to the right side of the centered nav block */
+    margin-left: auto;
 }
 
 .nav-icons a {
@@ -238,14 +248,14 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 550px;
-    background-image: url(images/main-cover.jpg);
+    height: 700px;
+    background-image: url(images/cover-sn.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     padding: 0 80px;
-     overflow: hidden;
+    overflow: hidden;
 }
         
 .hero-content {
@@ -255,7 +265,8 @@ body {
 }
 
 .hero-tagline {
-    color: #ccc;
+    color: #fff;
+    font-weight: 600;
     font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -301,14 +312,14 @@ body {
 .promo-banner {
     position: relative;
     width: 100%;
-     background: linear-gradient(
-        90deg,
-        #4b0082 0%,    
-        #3a2d93 15%,     
-        #274d9c 35%,     
-        #1b6f7a 60%,     
-        #0da84a 100%   
+    background: linear-gradient(
+    90deg,
+    #7a0002 0%,
+    #9a0d12 30%,
+    #b31317 60%,
+    #6a0003 100%
     );
+
     padding: 18px 60px;
     display: flex;
     justify-content: space-between;
@@ -324,16 +335,16 @@ body {
 }
 
 .promo-image {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
     object-fit: contain;
 }
 
 .promo-text {
     color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    max-width: 700px;
+    font-size: 25px;
+    font-weight: 700;
+    max-width: 900px;
     line-height: 1.3;
 }
 
@@ -342,8 +353,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 12px 28px;
     border-radius: 25px;
     text-decoration: none;
@@ -358,7 +369,10 @@ body {
 }
 
 .innovations-section {
-    padding: 60px 60px;
+    /* keep section centered and constrained so two large cards sit neatly */
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 40px;
     background-color: #fff;
 }
 
@@ -384,11 +398,15 @@ body {
 
 .products-grid {
     display: flex;
+    /* show large centered cards and allow horizontal scroll when required */
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 24px;
+    gap: 20px;
     padding-bottom: 10px;
     scroll-behavior: smooth;
+    justify-content: center; /* center the two-card group */
+    padding-left: 24px; /* small space at left and right so cards don't touch page edges */
+    padding-right: 24px;
 }
 
 .products-grid::-webkit-scrollbar {
@@ -403,12 +421,13 @@ body {
 }
 
 .product-card {
-    flex: 0 0 360px;
+    /* make cards larger and visually match the expected layout (two per row) */
+    flex: 0 0 520px;
     position: relative;
     border-radius: 14px;
     overflow: hidden;
-    background-color: #000;
-    height: 480px;
+    background-color: transparent; /* no black box behind the whole card */
+    height: 520px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     scroll-snap-align: start;
@@ -431,6 +450,7 @@ body {
     transform: scale(1.05);
 }
 
+/* keep the badge at the top-left as before */
 .product-badge {
     position: absolute;
     top: 16px;
@@ -445,31 +465,38 @@ body {
 }
 
 .product-info {
+    /* move title/short info to the top of the card instead of a bottom black box */
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 24px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 18px 20px;
     color: #fff;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+    border-radius: 10px;
+    z-index: 4;
 }
 
 .product-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 14px;
-    line-height: 1.3;
+    /* large title on top of the card */
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    line-height: 1.05;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.25);
 }
 
 .product-details {
-    background: rgba(0,0,0,0.7);
-    padding: 14px 18px;
-    border-radius: 8px;
+    /* remove large black details box — show smaller inline details (light text) */
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
 }
 
 .product-name {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin: 4px 0 8px 0;
     font-weight: 500;
 }
 
@@ -479,6 +506,26 @@ body {
     gap: 6px;
     margin-bottom: 10px;
 }
+
+/* Shop Now CTA — add to .product-info HTML when desired */
+.product-info .shop-now {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+.product-info .shop-now span.arrow { opacity: 0.95; }
+
+/* image clarity: ensure the img isn't dimmed */
+.product-card .product-image { filter: none; }
 
 .stars {
     color: #ffcd00;
@@ -496,6 +543,40 @@ body {
     gap: 10px;
     font-size: 16px;
     font-weight: 600;
+}
+
+/* carousel-like controls (visual only) placed below the grid */
+.products-controls {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 22px;
+    align-items: center;
+}
+.products-controls .control {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: #fff;
+    color: #111;
+    cursor: default; /* visual only */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.products-controls .control:hover { transform: translateY(-2px); }
+
+/* responsive: show two cards per row on large screens, stack on small screens */
+@media (max-width: 1225px) {
+    .product-card { flex: 0 0 420px; height: 480px; }
+}
+@media (max-width: 760px) {
+    .products-grid { justify-content: flex-start; padding-left: 16px; }
+    .product-card { flex: 0 0 90%; min-width: 320px; height: 420px; }
+    .product-info { top: 12px; left: 12px; right: 12px; padding: 12px; }
+    .product-title { font-size: 20px; }
 }
 
 .original-price {
@@ -1360,9 +1441,10 @@ body {
     }
     
     .navigation-menu {
-        width: 95%;
-        padding: 8px 0;
-        padding: 8px 30px;
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 8px 20px;
     }
     
     .nav-links {
