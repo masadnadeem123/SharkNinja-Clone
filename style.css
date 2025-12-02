@@ -1293,7 +1293,6 @@ body {
     text-decoration: underline;
 }
 
-/* Footer heading button style (desktop default is heading look) */
 .pcu-footer-heading {
     background: transparent;
     border: none;
@@ -1310,7 +1309,6 @@ body {
 }
 .pcu-footer-heading:focus { outline: 2px solid rgba(0,0,0,0.12); outline-offset: 4px; }
 .pcu-footer-chevron { margin-left: 12px; font-size: 20px; transition: transform 220ms ease; }
-/* Visually hide the checkbox toggles but keep them accessible */
 .pcu-footer-toggle { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
 .pcu-label {
@@ -2022,7 +2020,6 @@ body {
         margin-bottom: 8px;
     }
 
-    /* Accordion behavior for footer lists on small screens */
     .pcu-footer-col .pcu-footer-list {
         display: none;
         max-height: 0;
@@ -2032,19 +2029,16 @@ body {
         margin-top: 8px;
     }
 
-    /* show when the related checkbox is checked (CSS-only toggle) */
     .pcu-footer-col input.pcu-footer-toggle:checked ~ .pcu-footer-list {
         display: block;
-        max-height: 1200px; /* allow open animation */
+        max-height: 1200px; 
     }
 
-    /* Divider and tappable heading styles */
     .pcu-footer-col { padding-bottom: 10px; border-bottom: 1px solid #eee; }
     .pcu-footer-heading { font-size: 16px; display: flex; align-items: center; justify-content: space-between; padding: 12px 0; cursor: pointer; }
     .pcu-footer-heading .pcu-footer-chevron { transform: rotate(0deg); transition: transform 220ms ease; }
     .pcu-footer-col input.pcu-footer-toggle:checked + .pcu-footer-heading .pcu-footer-chevron { transform: rotate(180deg); }
 
-    /* Keep right promo area expanded */
     .pcu-footer-right .pcu-footer-list { display: block; max-height: none; }
     
     .pcu-input-row {
@@ -2314,7 +2308,6 @@ body {
         gap: 15px;
     }
 
-    /* Mobile separators: stack pcu-why cards and add divider lines between them */
     .pcu-why-grid {
         display: block;
     }
@@ -2402,12 +2395,6 @@ body {
     .pcu-footer-links a {
         font-size: 12px;
     }
-
-    /* Mobile: reorder footer-bottom to match expected layout
-       1) Links (stacked)
-       2) Location selector (centered)
-       3) Copyright (bottom-left)
-    */
     .pcu-footer-bottom {
         display: flex;
         flex-direction: column;
