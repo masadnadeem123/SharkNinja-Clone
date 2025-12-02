@@ -2104,11 +2104,14 @@ body {
         font-size: 13px;
     }
     
-    .innovations-section,
     .bundles-section,
     .fall-section,
     .trending-section {
         padding: 25px 15px;
+    }
+    .innovations-section{
+         padding: 25px 15px;
+         
     }
     .build-section{
         padding: 25px 15px;
