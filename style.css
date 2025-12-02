@@ -1293,6 +1293,26 @@ body {
     text-decoration: underline;
 }
 
+/* Footer heading button style (desktop default is heading look) */
+.pcu-footer-heading {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    font-weight: 650;
+    color: #111;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.pcu-footer-heading:focus { outline: 2px solid rgba(0,0,0,0.12); outline-offset: 4px; }
+.pcu-footer-chevron { margin-left: 12px; font-size: 20px; transition: transform 220ms ease; }
+/* Visually hide the checkbox toggles but keep them accessible */
+.pcu-footer-toggle { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
 .pcu-label {
     color: #666;
     margin-bottom: 8px;
@@ -2001,6 +2021,31 @@ body {
         font-size: 13px;
         margin-bottom: 8px;
     }
+
+    /* Accordion behavior for footer lists on small screens */
+    .pcu-footer-col .pcu-footer-list {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 280ms ease;
+        padding-left: 0;
+        margin-top: 8px;
+    }
+
+    /* show when the related checkbox is checked (CSS-only toggle) */
+    .pcu-footer-col input.pcu-footer-toggle:checked ~ .pcu-footer-list {
+        display: block;
+        max-height: 1200px; /* allow open animation */
+    }
+
+    /* Divider and tappable heading styles */
+    .pcu-footer-col { padding-bottom: 10px; border-bottom: 1px solid #eee; }
+    .pcu-footer-heading { font-size: 16px; display: flex; align-items: center; justify-content: space-between; padding: 12px 0; cursor: pointer; }
+    .pcu-footer-heading .pcu-footer-chevron { transform: rotate(0deg); transition: transform 220ms ease; }
+    .pcu-footer-col input.pcu-footer-toggle:checked + .pcu-footer-heading .pcu-footer-chevron { transform: rotate(180deg); }
+
+    /* Keep right promo area expanded */
+    .pcu-footer-right .pcu-footer-list { display: block; max-height: none; }
     
     .pcu-input-row {
         flex-direction: column;
@@ -2025,7 +2070,7 @@ body {
     .pcu-footer-links {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
     }
     
     .pcu-footer-links a {
@@ -2268,6 +2313,54 @@ body {
     .pcu-why-grid {
         gap: 15px;
     }
+
+    /* Mobile separators: stack pcu-why cards and add divider lines between them */
+    .pcu-why-grid {
+        display: block;
+    }
+
+    .pcu-why-card {
+        display: block;
+        width: 100%;
+        background: transparent;
+        padding: 18px 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 0 0 0;
+        border: none;
+    }
+
+    .pcu-why-card + .pcu-why-card {
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        margin-top: 18px;
+    }
+
+    .pcu-why-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: #fafafa;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        box-shadow: none;
+    }
+
+    .pcu-why-title {
+        font-size: 20px;
+        line-height: 1.05;
+        font-weight: 800;
+        margin: 0 0 8px 0;
+    }
+
+    .pcu-why-text {
+        margin: 0;
+        color: #333;
+        font-size: 15px;
+        line-height: 1.45;
+    }
     
     .pcu-why-card {
         padding: 15px;
@@ -2298,7 +2391,7 @@ body {
     }
     
     .pcu-footer-list li {
-        font-size: 12px;
+        font-size: 15px;
     }
     
     .pcu-small-note {
@@ -2308,6 +2401,57 @@ body {
     .pcu-footer-copy,
     .pcu-footer-links a {
         font-size: 12px;
+    }
+
+    /* Mobile: reorder footer-bottom to match expected layout
+       1) Links (stacked)
+       2) Location selector (centered)
+       3) Copyright (bottom-left)
+    */
+    .pcu-footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .pcu-footer-links {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .pcu-footer-links a {
+        display: block;
+        padding: 8px 0;
+        margin: 0;
+        color: #666;
+        text-decoration: underline;
+    }
+
+    .pcu-location-selector {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+    }
+
+    .pcu-location-selector .pcu-location-btn {
+        min-width: 220px;
+    }
+
+    .pcu-footer-copy {
+        order: 3;
+        width: 100%;
+        text-align: left;
+        color: #444;
+        font-size: 12px;
+        padding-top: 6px;
     }
 }
 
@@ -2442,5 +2586,3 @@ body {
         padding: 6px 10px;
     }
 }
-
-   
